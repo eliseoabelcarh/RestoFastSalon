@@ -4,7 +4,7 @@
 `Repositorio público sólo App Salón - AppOwner, AppCocina y AppCaja privado`
 
 ### Previsualización 
-![Screenshot](./screenshots/home.png)
+![Screenshot](./screenshots/previa.gif)
 
 ### Funcionalidades 
 #### Login y Registro completo
