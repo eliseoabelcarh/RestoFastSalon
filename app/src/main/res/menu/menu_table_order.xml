@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemComandaIcon"
+        android:icon="@drawable/ic_baseline_grading_24"
+        android:title="Enviar Comanda"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itemPagoIcon"
+        android:icon="@drawable/ic_baseline_monetization_on_24"
+        android:title="Guardar Pago"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itemVerificarYCerrarPedidoIcon"
+        android:icon="@drawable/ic_baseline_receipt_long_24"
+        android:title="Verificar y Cerrar Pedido"
+        app:showAsAction="always" />
+
+</menu>

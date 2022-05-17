@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/distribucion_mesas_1"
+    >
+
+    <LinearLayout
+        android:id="@+id/containerDeTodoElSalon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!-- INICIO BARRA -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_margin="15dp"
+                app:cardBackgroundColor="#C1C1C1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="BARRA"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <!-- FIN BARRA -->
+
+
+        <!-- INICIO DE CONTAINER SOLO DE MESAS -->
+        <LinearLayout
+            android:id="@+id/containerSoloDeMesas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <!-- INICIO  FILA 1 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <!-- INICIO MESA 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card7"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#C1C1C1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:contentPadding="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/MESA7IMAGE"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/ic_baseline_notifications_active_24"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/MESA7TEXT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="7"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:paddingLeft="6dp"
+                        >
+                        <TextView
+                            android:id="@+id/openingTimeTable7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            android:text="10:00 am"
+                            android:textSize="13dp"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- FIN MESA 1 -->
+
+
+                <!-- INICIO MESA 2 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card8"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#C1C1C1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:contentPadding="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/MESA8IMAGE"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/ic_baseline_notifications_active_24"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/MESA8TEXT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="8"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:paddingLeft="6dp"
+                        >
+                        <TextView
+                            android:id="@+id/openingTimeTable8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="10:00 am"
+                            android:visibility="invisible"
+                            android:textSize="13dp"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- FIN MESA 2 -->
+
+
+                <!-- INICIO MESA 3 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card9"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#C1C1C1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:contentPadding="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/MESA9IMAGE"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/ic_baseline_notifications_active_24"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/MESA9TEXT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="9"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:paddingLeft="6dp"
+                        >
+                        <TextView
+                            android:id="@+id/openingTimeTable9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="10:00 am"
+                            android:visibility="invisible"
+                            android:textSize="13dp"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- FIN MESA 3 -->
+
+
+            </LinearLayout>
+            <!-- FIN  FILA 1 -->
+
+
+            <!-- INICIO  FILA 2 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <!-- INICIO MESA 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#C1C1C1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:contentPadding="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/MESA4IMAGE"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/ic_baseline_notifications_active_24"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/MESA4TEXT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="4"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:paddingLeft="6dp"
+                        >
+                        <TextView
+                            android:id="@+id/openingTimeTable4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="10:00 am"
+                            android:visibility="invisible"
+                            android:textSize="13dp"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- FIN MESA 1 -->
+
+
+
+
+                <!-- INICIO MESA 3 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card5"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#C1C1C1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:contentPadding="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/MESA5IMAGE"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/ic_baseline_notifications_active_24"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/MESA5TEXT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="5"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:paddingLeft="6dp"
+                        >
+                        <TextView
+                            android:id="@+id/openingTimeTable5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="10:00 am"
+                            android:visibility="invisible"
+                            android:textSize="13dp"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- FIN MESA 3 -->
+
+
+
+
+                <!-- INICIO MESA 3 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card6"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#C1C1C1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:contentPadding="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/MESA6IMAGE"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/ic_baseline_notifications_active_24"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/MESA6TEXT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="6"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:paddingLeft="6dp"
+                        >
+                        <TextView
+                            android:id="@+id/openingTimeTable6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="10:00 am"
+                            android:visibility="invisible"
+                            android:textSize="13dp"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- FIN MESA 3 -->
+
+
+
+
+            </LinearLayout>
+            <!-- FIN  FILA 2 -->
+
+
+            <!-- INICIO  FILA 3 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <!-- INICIO MESA 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#C1C1C1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:contentPadding="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/MESA1IMAGE"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/ic_baseline_notifications_active_24"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/MESA1TEXT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="1"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:paddingLeft="6dp"
+                        >
+                        <TextView
+                            android:id="@+id/openingTimeTable1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="10:00 am"
+                            android:visibility="invisible"
+                            android:textSize="13dp"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- FIN MESA 1 -->
+
+
+                <!-- INICIO MESA 2 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#C1C1C1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:contentPadding="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/MESA2IMAGE"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/ic_baseline_notifications_active_24"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/MESA2TEXT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="2"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:paddingLeft="6dp"
+                        >
+                        <TextView
+                            android:id="@+id/openingTimeTable2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="10:00 am"
+                            android:visibility="invisible"
+                            android:textSize="13dp"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- FIN MESA 2 -->
+
+
+                <!-- INICIO MESA 3 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#C1C1C1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:contentPadding="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/MESA3IMAGE"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/ic_baseline_notifications_active_24"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/MESA3TEXT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="3"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:paddingLeft="6dp"
+                        >
+                        <TextView
+                            android:id="@+id/openingTimeTable3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="10:00 am"
+                            android:visibility="invisible"
+                            android:textSize="13dp"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- FIN MESA 3 -->
+
+            </LinearLayout>
+            <!-- FIN  FILA 3 -->
+
+
+        </LinearLayout>
+        <!-- FIN DE CONTAINER SOLO DE MESAS -->
+
+
+        <!-- INICIO PUERTA ENTRADA -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:layout_margin="15dp"
+                app:cardBackgroundColor="#C1C1C1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="ENTRADA"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <!-- FIN PUERTA ENTRADA -->
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

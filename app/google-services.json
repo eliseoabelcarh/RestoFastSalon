@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "871710636969",
+    "project_id": "mozoapp-3d137",
+    "storage_bucket": "mozoapp-3d137.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871710636969:android:2c9542c032f19ca4de62b8",
+        "android_client_info": {
+          "package_name": "com.example.appmozo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871710636969-10brlpgdqg05pem5j2565st9v85hr0ol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTwxI0E2KPbhUqnc92GfwMUjghcD1mpb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871710636969-10brlpgdqg05pem5j2565st9v85hr0ol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871710636969:android:55a3a5467e07ca55de62b8",
+        "android_client_info": {
+          "package_name": "com.restofast.salon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871710636969-10brlpgdqg05pem5j2565st9v85hr0ol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTwxI0E2KPbhUqnc92GfwMUjghcD1mpb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871710636969-10brlpgdqg05pem5j2565st9v85hr0ol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

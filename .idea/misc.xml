@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/drawable/stroke_bg.xml" value="0.1" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/drawable/stroke_bg_gray_border_dark.xml" value="0.14427083333333332" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/drawable/stroke_bg_white_with_two_borders.xml" value="0.1" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/drawable/stroke_container_carrito.xml" value="0.1" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/drawable/stroke_top_bottom_bg.xml" value="0.1" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout-sw600dp/distribucion_mesas_1.xml" value="0.1359375" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout-sw600dp/item_carritoitem.xml" value="0.536" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout-sw600dp/item_product.xml" value="0.4" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/activity_cashier.xml" value="0.12129629629629629" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/activity_order_taking.xml" value="0.1" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/carrito_order_fragment.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/carrito_table.xml" value="0.2" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/circular_progress.xml" value="0.1" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/circular_progress_sin_fondo.xml" value="0.12129629629629629" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/close_order_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/create_payment_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/distribucion_mesas_1.xml" value="0.1" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/item_add_comment_order_item.xml" value="0.12129629629629629" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/item_carritoitem.xml" value="0.2" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/item_detalle_orderitem_en_close_order.xml" value="0.2" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/item_forma_de_pago_e_importe.xml" value="0.2" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/item_order_to_go.xml" value="0.4" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/item_payment_method.xml" value="0.264" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/item_product.xml" value="0.1" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/login_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/order_to_go_cart_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/para_llevar_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/products_list_chips.xml" value="0.11450381679389313" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/register_fragment.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/reset_password_fragment.xml" value="0.18703703703703703" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/retiro_en_local_fragment.xml" value="0.18703703703703703" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/salon_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/layout/table_order_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/menu/bottom_navigation_menu_order_taking.xml" value="0.1" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/menu/drawer_menu.xml" value="0.1" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/menu/drawer_menu_cashier.xml" value="0.12129629629629629" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/menu/drawer_menu_order_taking.xml" value="0.1" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/menu/menu_carrito_order.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/menu/menu_close_order.xml" value="0.12129629629629629" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/menu/menu_create_payment.xml" value="0.1953125" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/menu/menu_para_llevar.xml" value="0.24427083333333333" />
+        <entry key="..\:/Users/elise/Documents/ANDROID_STUDIO_PROJECTS/RestoFastSalon/app/src/main/res/menu/menu_table_order.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

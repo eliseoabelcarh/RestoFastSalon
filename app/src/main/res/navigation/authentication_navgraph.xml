@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authentication_navgraph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.restofast.salon.authentication.ui.fragments.LoginFragment"
+        android:label=""
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment3"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_resetPasswordFragment"
+            app:destination="@id/resetPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.restofast.salon.authentication.ui.fragments.RegisterFragment"
+        android:label=""
+        tools:layout="@layout/register_fragment" />
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.restofast.salon.authentication.ui.fragments.ResetPasswordFragment"
+        android:label=""
+        tools:layout="@layout/reset_password_fragment" >
+        <argument
+            android:name="email"
+            app:argType="string" />
+    </fragment>
+</navigation>

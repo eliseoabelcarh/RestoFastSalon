@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_bar_navgraph"
+    app:startDestination="@id/salonFragment">
+
+    <fragment
+        android:id="@+id/salonFragment"
+        android:name="com.restofast.salon.orderTaking.ui.fragments.SalonFragment"
+        android:label=""
+        tools:layout="@layout/salon_fragment">
+        <action
+            android:id="@+id/action_salonFragment_to_carritoOrderFragment"
+            app:destination="@id/carritoOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/retiroEnLocalFragment"
+        android:name="com.restofast.salon.orderTaking.ui.fragments.RetiroEnLocalFragment"
+        android:label=""
+        tools:layout="@layout/retiro_en_local_fragment" />
+    <fragment
+        android:id="@+id/carritoOrderFragment"
+        android:name="com.restofast.salon.orderTaking.ui.fragments.CarritoOrderFragment"
+        android:label="carrito_order_fragment"
+        tools:layout="@layout/carrito_order_fragment">
+        <argument
+            android:name="orderID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/paraLlevarFragment2"
+        android:name="com.restofast.salon.orderTaking.ui.fragments.ParaLlevarFragment"
+        android:label="para_llevar_fragment"
+        tools:layout="@layout/para_llevar_fragment">
+        <action
+            android:id="@+id/action_paraLlevarFragment2_to_carritoOrderFragment"
+            app:destination="@id/carritoOrderFragment"
+            app:popUpTo="@+id/paraLlevarFragment2"/>
+    </fragment>
+</navigation>

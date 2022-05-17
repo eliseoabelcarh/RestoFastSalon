@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cashier.ui.fragments.CreatePaymentFragment">
+
+    <!--    bloque 1 -->
+    <LinearLayout
+        android:id="@+id/bloque1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/bloque2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/containerExistePagoEnCreatePayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="PAGO AGREGADO"
+            android:textAllCaps="true"
+            android:textColor="#19AF1F"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--    bloque 1 -->
+
+
+    <!--    bloque 2 -->
+    <LinearLayout
+        android:id="@+id/bloque2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/bloque3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bloque1">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddCashPaymentEnCreatePayment"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Pago con Efectivo"
+            app:icon="@drawable/ic_baseline_add_circle_outline_24"
+            app:iconGravity="end"
+            app:iconPadding="10dp" />
+    </LinearLayout>
+    <!--    bloque 2 -->
+
+
+    <!--    bloque 3 -->
+    <LinearLayout
+        android:id="@+id/bloque3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/bloque4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bloque2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddCardPaymentEnCreatePayment"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Pago con Tarjeta"
+            app:icon="@drawable/ic_baseline_add_circle_outline_24"
+            app:iconGravity="end"
+            app:iconPadding="10dp" />
+    </LinearLayout>
+    <!--    bloque 3 -->
+
+
+    <!--    bloque 4 -->
+    <LinearLayout
+        android:id="@+id/bloque4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical" app:layout_constraintBottom_toTopOf="@id/bloque5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bloque3">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/stroke_bg_gray_border_dark">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerDeMetodosDePagoEnCreatePayment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ScrollView>
+    </LinearLayout>
+    <!--    bloque 4 -->
+
+
+    <!--    bloque 5 -->
+    <LinearLayout
+        android:id="@+id/bloque5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/bloque6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bloque4">
+
+        <TextView
+            android:id="@+id/errorMessageEnCreatePayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="ERRORES"
+            android:visibility="gone"
+            android:textColor="@color/design_default_color_error" />
+    </LinearLayout>
+    <!--    bloque 5 -->
+
+
+    <!--    bloque 6 -->
+    <LinearLayout
+        android:id="@+id/bloque6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke_bg"
+        android:gravity="end"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/bloque7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bloque5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="...SUMANDO"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/sumaPreviaEnCreatePayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="x.xx"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="0dp"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--    bloque 6-->
+
+
+    <!--    bloque 7 -->
+    <LinearLayout
+        android:id="@+id/bloque7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke_bg"
+        android:gravity="end|center"
+        android:orientation="horizontal"
+        android:padding="7dp"
+        app:layout_constraintBottom_toTopOf="@id/bloque8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bloque6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total a Pagar: "
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/símboloCurrencyEnCreatePayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S/."
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/importeTotalParaPagarEnCreatePayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="212.00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--    bloque 7 -->
+
+
+    <!--    bloque 8 -->
+    <LinearLayout
+        android:id="@+id/bloque8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bloque7">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputComprobanteEnCreatePayment"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:hint="Nro Boleta">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSavePaymentEnCreatePayment"
+            android:layout_width="match_parent"
+            android:maxWidth="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Guardar" />
+
+
+    </LinearLayout>
+    <!--    bloque 8 -->
+
+
+
+    <!-- SHOW CIRCULAR PROGRESS-->
+    <include
+        android:id="@+id/circularProgressEnCreatePayment"
+        layout="@layout/circular_progress_sin_fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_item_detalle_orderitem_en_close_order"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginBottom="3dp"
+    android:backgroundTintMode="add"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="3dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+
+        <!--    CONTAINER TOTAL-->
+        <LinearLayout
+            android:id="@+id/containerDeTodoVerticalEnDetalleOrderItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--   BLOQUE 1 info y detalle-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <!--   SUB BLOQUE CON INFO PRODUCTO-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <!--  cantidad y nombre producto-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cantidadOrderItemEnCloseOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/simboloXenCloseOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="3dp"
+                            android:layout_marginStart="2dp"
+                            android:text="x"/>
+
+                        <TextView
+                            android:id="@+id/nombreProductoEnCloseOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="200dp"
+                            android:paddingBottom="5dp"
+                            android:text="Some some some some some some some some"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+                    <!--  cantidad y nombre producto-->
+
+                    <!--  precio unitario-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tituloPrecioUnitarioEnCloseOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Precio Unitario"
+                            android:layout_marginEnd="7dp"
+                            android:textSize="12sp"/>
+                        <TextView
+                            android:id="@+id/simboloCurrencyEnCloseOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:text="S/."/>
+                        <TextView
+                            android:id="@+id/importeDePrecioUnitarioEnCloseOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginStart="4dp"
+                            android:text="12.00"/>
+
+                    </LinearLayout>
+                    <!--  precio unitario-->
+
+                    <!--OPCIONES DOBLE estado y tiempo-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <!--OPCION uno-->
+                        <LinearLayout
+                            android:id="@+id/opcionDiferentesAServido"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tituloEstadoOpc1EnCloseOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="7dp"
+                                android:text="ESTADO:"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/estadoActualDiferenteCloseOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ENTREGA MOZO"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+                        <!--OPCION uno-->
+
+                        <!--OPCION DOS-->
+                        <LinearLayout
+                            android:id="@+id/opcionServidoEnCloseOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tituloEstadoOpc2EnCloseOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="7dp"
+                                android:text="ESTADO:"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/estadoActualServidoCloseOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:layout_marginEnd="7dp"
+                                android:text="SERVIDO"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:text="en"/>
+                            <TextView
+                                android:id="@+id/tiempoMinutosDeServidoCloseOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:text="55"/>
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="mins"/>
+
+                        </LinearLayout>
+                        <!--OPCION DOS-->
+
+
+
+                    </LinearLayout>
+                    <!--OPCIONES DOBLE estado y tiempo-->
+
+                </LinearLayout>
+                <!--   SUB BLOQUE CON INFO PRODUCTO-->
+
+                <!--   SUB BLOQUE SUBTOTAL-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/simboloCurrencyOrderItemEnCloseOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp"
+                        android:textSize="12dp"
+                        android:text="S/."
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/importeDeOrderItemEnCloseOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="6dp"
+                        android:text="120.00"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <!--   SUB BLOQUE SUBTOTAL-->
+
+            </LinearLayout>
+            <!--   BLOQUE 1 info y detalle-->
+
+
+            <!--   BLOQUE 2 comentarios de item-->
+            <LinearLayout
+                android:id="@+id/containerAnotacionesEnCloseOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tituloAnotacionesEnCloseOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="7dp"
+                    android:text="Anotaciones de Item:" />
+
+                <TextView
+                    android:id="@+id/comentariosDeOrderItemEnCloseOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="comentarios del oirder item a a bsbs vsvs hshsh s hshca aca ca "
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+            <!--   BLOQUE 2 comentarios de item-->
+
+
+            <!--   BLOQUE 3 motivo de anulacion-->
+            <LinearLayout
+                android:id="@+id/containerAnulacionEnCloseOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tituloMotivoanulacionEnCloseOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="7dp"
+                    android:text="Motivo de Anulación:" />
+
+                <TextView
+                    android:id="@+id/motivoDeAnulacionDeOrderItemEnCloseOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="motivios de anulacion del oirder item a a bsbs vsvs hshsh s hshca aca ca "
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+            <!--   BLOQUE 3 motivo de anulacion-->
+
+
+        </LinearLayout>
+        <!--    CONTAINER TOTAL-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
